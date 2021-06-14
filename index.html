@@ -75,7 +75,23 @@
         </div>
         <script>
             const numeroAleatorio = ()=>{
-                document.getElementById('h1').innerHTML = Math.floor(Math.random() * 5) + 1;
+                let random = Math.floor(Math.random() * 5) + 1
+                document.getElementById('h1').innerHTML = random;
+                if (random == 1){
+                    document.getElementById('h1').style.color = 'skyblue';
+                }
+                else if(random == 2){
+                    document.getElementById('h1').style.color = 'yellow';
+                }
+                else if(random == 3){
+                    document.getElementById('h1').style.color = 'limegreen';
+                }
+                else if(random == 4){
+                    document.getElementById('h1').style.color = 'red';
+                }
+                else{
+                    document.getElementById('h1').style.color = 'blue';
+                }
             }   
         </script>
     </div>
