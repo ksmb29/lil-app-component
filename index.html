@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM con JS</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- <h1 id="heading">Ejemplo DOM con JS</h1>
+    <p id="paragraph" class="azul">Saludos desde html</p>
+    <p id="paragraph2">Saludos desde html2</p>
+    <p id="paragraph3" class="azul">Saludos desde html3</p> -->
+    <!-- <script>
+        console.log('hola desde javascript')
+        let heading = document.getElementById('heading');
+        console.log('valor heading: ' + heading.innerHTML);
+        let paragraph = document.getElementById('paragraph');
+        console.log('valor parrafo: ' + paragraph)
+        // heading.innerHTML = 'Ejemplo 2 cambio con javascript'
+        // paragraph.innerHTML = '123123123123123'
+        let ps = document.getElementsByTagName('p');
+        console.log(`Numero de parrafos: ${ps.length}`)
+        for(let i=0; i<ps.length; i++ ){
+            console.log(ps[i].innerHTML)
+            console.log(ps[i])
+        }
+        let elements = document.getElementsByClassName('azul');
+        console.log(`numero de elementos azules: ${elements.length}`);
+        for(let i=0; i<elements.length; i++){
+            console.log(elements[i].innerHTML);
+            console.log(elements[i]);
+        }
+    </script> -->
+    <!-- <form action="" id="formulario">
+        Nombre: <input type="text" name="nombre" value="Juan">
+        <br/>
+        Apellido: <input type="text" name="apellido" value="Perez">
+        <br/>
+    </form>
+    <button onclick="mostrarValores()">
+        Mostrar
+    </button>
+    <div id="valor"></div>
+
+    <script>
+        function mostrarValores(){
+            let form = document.forms['formulario'];
+            let texto = '';
+            let nombre = form['nombre']
+            texto += nombre.value;
+            let apellido = form['apellido'];
+            texto += apellido.value;
+            document.getElementById('valor').innerHTML = texto;
+        }
+    </script> -->
+    <!-- <button onclick="cambiar()">
+        cambiar
+    </button>
+    <script>
+        document.write('saludos desde js');
+        function cambiar(){
+            document.write('adios')
+        }
+    </script> -->
+    <div class="card">
+        <div class="number">
+            <h1 id="h1">1</h1>
+        </div>
+        <div class="button">
+            <button onclick="numeroAleatorio()">
+                <a href="#">Piensa Numero</a>
+            </button>
+        </div>
+        <script>
+            const numeroAleatorio = ()=>{
+                document.getElementById('h1').innerHTML = Math.floor(Math.random() * 5) + 1;
+            }   
+        </script>
+    </div>
+</body>
+</html>
